@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="lightbox.min.css" />
+    <link rel="stylesheet" href="utilities.css" />
+    <link rel="stylesheet" type="text/css" href="landing-styles.css" />
+    <title>Valias Painting CO.</title>
+  </head>
+  <body id="home">
+    <header class="landing-page">
+      <div id="navbar" class="navbar">
+        <nav>
+          <ul>
+            <a href="#home"><li>Home</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#blog"><li>Services</li></a>
+
+            <a href="#contact"><li>Contact</li></a>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h3 class="logo"></h3>
+        <h1>A Beacon To Your Modern Design</h1>
+        <p>Our custom paints and wallpapers are chosen with</p>
+        <p>inspiriration, checked for quality and originality</p>
+        <p>and meticulously faceted to fit your needs.</p>
+        <a href="#about" class="btn zoom">Read More</a>
+      </div>
+    </header>
+    <main>
+      <!-- About Icons -->
+      <section id="about" class="icons bg-light">
+        <div style="justify-content: space-around" class="flex-items">
+          <div>
+            <i class="far fa-calendar-alt fa-3x zoom"></i>
+            <div>
+              <h3>Schedule A Date & Time</h3>
+              <p>Feel free to reach us anytime.</p>
+            </div>
+          </div>
+          <div>
+            <i class="fas fa-map-marked-alt fa-3x zoom"></i>
+
+            <div>
+              <h3>Set A Destination For Your Makeover</h3>
+              <p>We come to you! No need to leave.</p>
+            </div>
+          </div>
+          <div>
+            <i class="fas fa-crosshairs fa-3x zoom"></i>
+            <div>
+              <h3>Design & Build</h3>
+              <p>We'll make it happen</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About -->
+      <section class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1 zoom">
+              <img src="images/about.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+              <h4>What you are looking for</h4>
+              <h2>There is no equal to our craft</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+                veniam blanditiis, doloremque maxime quaerat corrupti debitis
+                laudantium similique corporis magni!
+              </p>
+              <a href="#" class="btn btn-outline zoom">
+                <i class="fas fa-chevron"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="blog flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img class="zoom" src="images/job17.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-secondary">
+              <h4>2021</h4>
+              <h2>Our Services</h2>
+              <p>
+                We offer a broad range of options to create custom plans for
+                your home interior & exterior. Tell us what you have in mind and
+                we'll draw up a plan to suit your needs.
+              </p>
+              <a href="services/services.html" class="btn btn-outline zoom">
+                <i class="fas fa-chevron"></i>
+                What We Offer
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact" class="contact flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img class="zoom" src="images/contact.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h2>Request A Callback Or A Visit For A Quote</h2>
+              <div>
+                <h3>Address: Greenwich, Connecticut</h3>
+                <h3>Phone Number: (203)561-3481</h3>
+                <br />
+                <button class="btn zoom">
+                  <a href="mailto: Rvalias@aol.com">Send Email</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg-dark" style="background-color: black">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>2021 REACTBYDESIGN BY KEVIN VALIAS</p>
+    </footer>
+
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+  </body>
+</html>

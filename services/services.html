@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    \
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="utilities.css" />
+    <title>Services | Page</title>
+  </head>
+  <body id="home">
+    <header class="landing-page">
+      <div id="navbar" class="navbar">
+        <nav>
+          <ul>
+            <a href="/index.html"><li>Home</li></a>
+
+            <a href="#gallery"><li>Gallery</li></a>
+            <a href="#contact"><li>Contact</li></a>
+          </ul>
+        </nav>
+      </div>
+      <div style='text-shadow: 1px 1px black;'class="content">
+        <h3 class="logo"></h3>
+        <h1>More Than 20 Years Of Patience, Dedication, Appreciation</h1>
+        
+      </div>
+    </header>
+    <main>
+      <!-- About Icons -->
+
+      <section id="about" class="icons bg-light">
+        <div class="flex-items">
+          <div>
+            <i class="fas fa-brush fa-3x zoom"></i>
+            <div>
+              <h3 style="color: black;">Painting</h3>
+              <p>
+                Valias Professional Painting specializes in interior and exterior painting and staining.
+              </p>
+            </div>
+          </div>
+          <div>
+            <i class="fas fa-crosshairs fa-3x zoom"></i>
+
+            <div>
+              <h3 style="color: black;">We Make It Happen</h3>
+              <p>
+                Our mission is customer satisfaction. Our operation empathizes in combining our superior workmanship, expertise in materials, and management to provide our customers with services of the highest possible value.
+              </p>
+            </div>
+          </div>
+          <div>
+            <i class="fas fa-scroll fa-3x zoom"></i>
+            <div>
+              <h3 style="color: black;">Wall Paper</h3>
+              <p>
+                Our wallpaper installations are guaranteed, so you never have to worry about seams lifting.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+       <section id="gallery" class="cases flex-grid section-padding">
+      <header class="section-header">
+        <h3 style="color: black; font-size: 25px;">This Is What We Do</h3>
+        <h2 style="color: black;">Your Dream Is Our Vision</h2>
+        <P style="color: black; font-weight: bold; font-size: 25px;">Interior & Exterior Decor</P>
+      </header>
+     <div class="row">
+  <div class="column">
+    <img src="../images/job1.jpeg" style="width:100%; object-fit: contain;"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../images/job5.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../images/job4.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../images/job11.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../images/job14.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../images/job12.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../images/job16.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../images/job13.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="../images/job1.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="../images/job5.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="../images/job4.jpeg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="../images/job11.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="../images/job14.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="../images/job12.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="../images/job16.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="../images/job13.jpeg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    
+</div>
+
+    </section>
+      <!-- About -->
+
+      <!-- Contact -->
+      <section id="contact" class="contact flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img class="zoom" src="../images/dreambig.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div style="color: black;" class="column-2 bg-light">
+              <h2>Leave Us A Message </h2>
+              <div>
+                <h3>Address: Greenwich, Connecticut</h3>
+                <h3>Phone Number: (203)561-3481</h3>
+                <br />
+                <button class="btn zoom">
+                  <a href="mailto: Rvalias@aol.com">Send Email</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg-dark" style="background-color: black">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>2021 REACTBYDESIGN BY KEVIN VALIAS</p>
+    </footer>
+
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+  </body>
+</html>
